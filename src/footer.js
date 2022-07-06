@@ -21,6 +21,7 @@ export default function Footer(){
 
             <div className="LogoRights" class="pb-70 pt-100 block box-border">
                 <p>box</p> 
+                
             </div>
         </footer>
     )
