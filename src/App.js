@@ -4,7 +4,7 @@ import MainNavbar from './mainnavbar.js'
 import Footer from './footer.js'
 
 function App() {
-  console.log("tatti hogyi h");
+  console.log("tatti hogyi h bahut");
   return (
   <div>
     <div className="dealNavbar">
