@@ -4,7 +4,6 @@ import MainNavbar from './mainnavbar.js'
 import Footer from './footer.js'
 
 function App() {
-  console.log("tatti");
   return (
   <div>
     <div className="dealNavbar">
