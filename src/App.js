@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './navbar.js'
 import MainNavbar from './mainnavbar.js'
+import Footer from './footer.js'
 
 function App() {
   return (
@@ -11,6 +12,10 @@ function App() {
 
     <div className="mainNavbar">
       <MainNavbar />
+    </div>
+
+    <div>
+      <Footer/>
     </div>
   </div>
   );
