@@ -9,9 +9,7 @@ function App() {
       <Navbar />
     </div>
 
-    <div className="mainNavbar">
-      <MainNavbar />
-    </div>
+  
   </div>
   );
 }
