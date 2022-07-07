@@ -11,10 +11,12 @@ export default function MainNavbar(){
             </div>
 
             <div className="MenuItems" class="grid grid-rows-1 grid-cols-4 gap-x-4 flex flex-row flex-nowrap flex-initial font-medium pb-0 pt-4 font-serif text-xl">
+
                 <div><a href="#" class="text-black">Home</a> <KeyboardArrowDownIcon/> </div>
                 <div><a href="#" class="text-black">Order</a></div>
                 <div><a href="#" class="text-black">About</a></div>
                 <div><a href="#" class="text-black">Contact</a></div>
+
             </div>
 
             <div className="Search" class="flex flex-row flex-nowrap flex-initial pb-0 pt-4 font-serif text-s px-40 font-black">
