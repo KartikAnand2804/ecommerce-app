@@ -16,12 +16,12 @@ function App() {
       <MainNavbar />
     </div>
 
-    <div className='grid'>
-      <FirstGrid />
-    </div>
-
     <div>
       <SlidingCarousel />
+    </div>
+
+    <div className='grid'>
+      <FirstGrid />
     </div>
   </div>
   );
