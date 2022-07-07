@@ -1,6 +1,7 @@
 import React from 'react';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import SearchIcon from '@mui/icons-material/Search';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 
 export default function MainNavbar(){
@@ -18,7 +19,7 @@ export default function MainNavbar(){
             </div>
 
             <div className="Search" class="flex flex-row flex-nowrap flex-initial pb-0 pt-4 font-serif text-s px-40 font-black">
-                <div><SearchIcon/><input class="px-1.5 rounded-full bg-slate-100 border-width-2 border-l-4 border-r-4" type="text" name="searchbar" placeholder="search for products here."></input></div>
+                <div class="text-xl"><AccountCircleIcon/> <ShoppingCartIcon/></div>
             </div>
         </div>
     )
