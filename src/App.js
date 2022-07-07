@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './navbar.js'
 import MainNavbar from './mainnavbar.js'
 import Footer from './footer.js'
+import FirstGrid from './first_grid.js';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
 
     <div className="mainNavbar">
       <MainNavbar />
+    </div>
+    <div className='grid'>
+      <FirstGrid />
     </div>
 
     <div>

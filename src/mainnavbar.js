@@ -12,7 +12,7 @@ export default function MainNavbar(){
 
             <div className="MenuItems" class="grid grid-rows-1 grid-cols-4 gap-x-4 flex flex-row flex-nowrap flex-initial font-medium pb-0 pt-4 font-serif text-xl">
                 <div><a href="#">Home</a> <KeyboardArrowDownIcon/> </div>
-                <div><a href="#">Order</a></div>
+                <div><a href="#">Orders</a></div>
                 <div><a href="#">About</a></div>
                 <div><a href="#">Contact</a></div>
             </div>
