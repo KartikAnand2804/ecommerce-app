@@ -13,7 +13,7 @@ export default function MainNavbar(){
 
             <div className="grid grid-rows-1 grid-cols-6 gap-x-6 flex flex-row flex-nowrap flex-initial font-medium pb-0 pt-4 font-serif text-xl">
 
-                <div style={{display:'flex'}}><a href="#" class="text-black no-underline"><Link to='/' class="text-black no-underline">Home</Link></a> <KeyboardArrowDownIcon/> </div>
+                <div style={{display:'flex'}}><a href="#" class="text-black no-underline"><Link to='/' class="text-black no-underline">Home</Link></a> </div>
                 <div><a href="#" class="text-black no-underline">Order</a></div>
                 <div><a href="#" class="text-black no-underline">About</a></div>
                 <div><a href="#" class="text-black no-underline">Contact</a></div>
