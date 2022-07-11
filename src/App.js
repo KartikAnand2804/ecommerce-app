@@ -9,6 +9,9 @@ import LoginForm from './components/LoginForm';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './components/Home'
 import SignUp from './components/SignUp'
+import Vendor from './vendor'
+
+
 function App() {
   // const adminUser ={
   //   email: "admin@gmail.com",
@@ -27,16 +30,20 @@ function App() {
 
   return (
     <>
+
       <Router>
         <MainNavbar/>
-        <Routes>
-          <Route path='/' exact element={<Home/>} />
-          <Route path='/login' element={<LoginForm/>} />
-          <Route path='/signup' element={<SignUp/>} />
-        </Routes>
-        
+          
+          <Routes>
+            <Route path='/' exact element={<Home/>} />
+            <Route path='/login' element={<LoginForm/>} />
+            <Route path='/signup' element={<SignUp/>} />
+            <Route path='/vendor' element={<Vendor/>} />
+          </Routes>
+          
         <Footer/>
       </Router>
+
     </>
   );
 }

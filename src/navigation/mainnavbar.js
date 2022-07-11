@@ -11,7 +11,7 @@ export default function MainNavbar(){
                 <img src="https://htmldemo.net/flone/flone/assets/img/logo/logo.png"></img>
             </div>
 
-            <div className="grid grid-rows-1 grid-cols-6 gap-x-6 flex flex-row flex-nowrap flex-initial font-medium pb-0 pt-4 font-serif text-xl">
+            <div className="grid grid-rows-1 grid-cols-7 gap-x-6 flex flex-row flex-nowrap flex-initial font-medium pb-0 pt-4 font-serif text-xl">
 
                 <div style={{display:'flex'}}><a href="#" class="text-black no-underline"><Link to='/' class="text-black no-underline">Home</Link></a> </div>
                 <div><a href="#" class="text-black no-underline">Order</a></div>
@@ -19,12 +19,10 @@ export default function MainNavbar(){
                 <div><a href="#" class="text-black no-underline">Contact</a></div>
                 <div><Link to='/login' class="text-black no-underline"><a href="#" class="text-black no-underline">Login</a> </Link></div>
                 <div><a href="#" class="text-black no-underline"><Link to='/signup' class="text-black no-underline">SignUp</Link></a> </div>
+                <div><Link to="/vendor" class="text-black no-underline"><ShoppingCartIcon/></Link></div>
 
             </div>
 
-            <div className="Search" class="flex flex-row flex-nowrap flex-initial pb-0 pt-4 font-serif text-s px-40 font-black">
-                <div class="text-xl"><AccountCircleIcon/> <ShoppingCartIcon/></div>
-            </div>
         </div>
     )
 }
