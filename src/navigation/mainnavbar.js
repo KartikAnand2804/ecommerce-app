@@ -3,6 +3,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import {Link} from 'react-router-dom'
+import PostAddIcon from '@mui/icons-material/PostAdd';
 
 export default function MainNavbar(){
     return(
@@ -19,10 +20,14 @@ export default function MainNavbar(){
                 <div><a href="#" class="text-black no-underline">Contact</a></div>
                 <div><Link to='/login' class="text-black no-underline"><a href="#" class="text-black no-underline">Login</a> </Link></div>
                 <div><a href="#" class="text-black no-underline"><Link to='/signup' class="text-black no-underline">SignUp</Link></a> </div>
-                <div><Link to="/vendor" class="text-black no-underline"><ShoppingCartIcon/></Link></div>
 
             </div>
 
+            <div className="inline gap-x-6 flex flex-row flex-nowrap flex-initial font-medium pb-0 pt-4 font-serif text-xl justify-end">
+                <div class="mr-0"><AccountCircleIcon/></div>
+                <div class="mr-0"><ShoppingCartIcon/></div>
+                <div class="mr-0"><Link to="/vendor" class="text-black no-underline"><PostAddIcon/></Link></div>
+            </div>
         </div>
     )
 }
