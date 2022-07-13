@@ -1,3 +1,88 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header{
+   
+    padding-top: 50px;
+    height: 22pc;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.3pc;
+    line-height: 0.5;
+    background-size: cover;
+    background-position: 50%;
+    color : white;
+    margin-bottom: 2pc;
+    margin-top: 2pc;
+    
+    font-family: 'OnePlus Sans Regular','Helvetica Neue',Helvetica,Arial,sans-serif,system-ui;
+
+    background-image: url(https://oasis.opstatics.com/content/dam/oasis/page/2021/new-homepage/in/subscribe/Subscribe-l.jpg);
+    background-repeat: no-repeat;
+}
+   /* font-feature-settings: "salt"; */
+   
+
+h3{
+    font-weight: 100;
+    font-size: 1pc;
+    margin:0.5 ;
+    text-align: center;
+}
+h1{
+    font-weight:300;
+    font-size: 2.8pc;
+}
+
+
+a{
+    color: #fff;
+}
+ 
+.link{
+    margin:45px;
+    font-size: small;
+    
+}
+
+/* email */
+.form-control {
+    height: 30px;
+    width: 10pc;
+    border-color: #ffffff;
+    border-radius: 2px 0px 0px 2px;
+}
+
+
+.form-control:focus {
+box-shadow: none !important;
+border: 2px solid #243c4f;
+border-color: none;
+
+}
+
+
+.btn {
+min-height: 32px; 
+width: 10pc;
+border-radius:0;
+background: #243c4f;
+color: #fff;
+font-weight:300;
+}
+
+.btn:hover {
+
+background: red;
+color: #fff
+
+}
+
+
+.form-control:focus {
+    color: #495057;
+    background-color: rgb(255, 255, 255);
+    border-color: white;
+}

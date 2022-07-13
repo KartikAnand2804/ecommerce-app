@@ -6,7 +6,7 @@ export default function FirstGrid(){
             <div className="container">
                  <div className="phone2"style={{display: 'inline-block', width:'25%',textAlign:'center',justifyContent:'center'}}>
 
-                <img alt="timer" src="https://oasis.opstatics.com/content/dam/oasis/page/homepage/new-in/nav-render/Pickle-60x60.png" />
+                 <img alt="timer" src="https://oasis.opstatics.com/content/dam/oasis/page/homepage/new-in/nav-render/Pickle-60x60.png" />
                 <p>Nord Series</p>
                 </div>
 
