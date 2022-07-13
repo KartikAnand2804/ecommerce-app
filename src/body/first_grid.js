@@ -4,23 +4,23 @@ export default function FirstGrid(){
     return(
         <div className ="firstgrid" style={{display: 'inline-block'}}>
             <div className="container">
-                 <div className="phone2"style={{display: 'inline-block', width:'25%',textAlign:'center',justifyContent:'center'}}>
+                 <div className="mobilePhone"style={{display: 'inline-block', width:'25%',textAlign:'center',justifyContent:'center'}}>
 
-                 <img alt="timer" src="https://oasis.opstatics.com/content/dam/oasis/page/homepage/new-in/nav-render/Pickle-60x60.png" />
-                <p>Nord Series</p>
+                <img alt="timer" src="https://oasis.opstatics.com/content/dam/oasis/page/homepage/new-in/nav-render/Karen-green-160x160_1.png" />
+                <p>Mobile Phones</p>
                 </div>
 
-                <div className="phone2"style={{display: 'inline-block', width:'25%',textAlign:'center',justifyContent:'center'}}>
-                <img alt="timer" src="https://oasis.opstatics.com/content/dam/oasis/page/homepage/new-in/nav-render/Karen-green-160x160_1.png" />
-                <p>TV</p>
+                <div className="earphones"style={{display: 'inline-block', width:'25%',textAlign:'center',justifyContent:'center'}}>
+                <img alt="timer" src="https://image01-in.oneplus.net/ebp/202207/01/1-m00-3c-27-cpgm7mk-ru-afzmxaam7ntavfjs206_384_384.png" />
+                <p>Earphones</p>
                 </div>
 
                 <div className="watches"style={{display: 'inline-block', width:'25%', textAlign:'center',justifyContent:'center'}}>
                 <img alt="timer" src="https://oasis.opstatics.com/content/dam/oasis/page/homepage/new-in/nav-render/Wearable.png" />
-                <p>Wearables</p>
+                <p>Smart Watches</p>
                 </div>
                 
-                <div className="watches"style={{display: 'inline-block', width:'25%',textAlign:'center',justifyContent:'center'}}>
+                <div className="accessories"style={{display: 'inline-block', width:'25%',textAlign:'center',justifyContent:'center'}}>
                 <img alt="timer" src="https://oasis.opstatics.com/content/dam/oasis/page/homepage/new-in/nav-render/Power-Cables.png"/>
                 <p>Accessories</p>
                 </div>
