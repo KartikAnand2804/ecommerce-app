@@ -4,12 +4,17 @@ import MainNavbar from './navigation/mainnavbar.js'
 import FirstGrid from './body/first_grid.js';
 import SlidingCarousel from './slidingcarousel/carousel.js'
 import Footer from './footer.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SecondGrid from './body/second_grid';
+import NewsLetter from './body/newsletter';
 import { getCardActionAreaUtilityClass } from '@mui/material';
 import LoginForm from './components/LoginForm';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './components/Home'
 import SignUp from './components/SignUp'
 import Vendor from './vendor'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {
