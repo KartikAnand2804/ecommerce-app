@@ -10,7 +10,7 @@ export default function LoginForm() {
     }
     return (
         <>
-            <div class="w-96" style={{marginLeft:"560px", margin: "auto", justifyContent: "center"}}>
+            <div class="w-96" style={{marginLeft:"560px", margin: "auto", justifyContent: "center", marginBottom: "260px"}}>
                 <h2 style={{textAlign:"center"}}>Login Form</h2>
                 <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit(onSubmit)}>
                     <div class="mb-4">
