@@ -14,6 +14,7 @@ import Home from './components/Home'
 import SignUp from './components/SignUp'
 import Vendor from './vendor'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Cart from './Cart'
 
 
 
@@ -44,6 +45,7 @@ function App() {
             <Route path='/login' element={<LoginForm/>} />
             <Route path='/signup' element={<SignUp/>} />
             <Route path='/vendor' element={<Vendor/>} />
+            <Route path='/cart' element={<Cart/>}/>
           </Routes>
           
         <Footer/>
