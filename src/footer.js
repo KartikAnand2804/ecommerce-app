@@ -3,7 +3,7 @@ import NewsLetter from './body/newsletter';
 
 const Footer = () => {
   return (
-    <div className="main-footer" class="bg-white text-black pt-0 ml-0 mr-0 w-full relative">
+    <div className="main-footer" class="bg-black text-white pt-1 ml-0 mr-0 w-full relative">
     
          <div className="container" class=" flex items-justify flex-col min-w-full mt-3 " >
             <div className="row" class="grid grid-cols-5 grid-rows-1 ">
