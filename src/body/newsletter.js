@@ -13,9 +13,9 @@ export default function NewsLetter(){
 	<div className="single">
 		<h3>Sign up for our newsletter!</h3>
 	<div className="input-group" class="mt-5">
-         <input type="email" className="form-control" style={{justifycontent:"center", height:"30px", width: "22pc", borderColor: "#ffffff", borderRadius:"2px 0px 0px 2px"}} placeholder="Enter your email"/>
+         <input type="email" className="form-control" style={{ marginLeft:" 23pc", height:"30px", width: "22pc", borderColor: "#ffffff", borderRadius:"2px 0px 0px 2px"}} placeholder="Enter your email"/>
          <span className="input-group-btn"></span>
-         <button className="btn" type="submit" style={{minHeight: "42px", width: "11pc" , BorderRadius:"0", background:"#243c4f", color:"#fff", fontWeight:"300"}}>Subscribe</button>
+         <button className="btn" type="submit" style={{minHeight: "42px", width: "11pc" , BorderRadius:"0", background:"#243c4f", color:"#fff", fontWeight:"300", marginTop:"20px"}}>Subscribe</button>
           </div>
         </div>
         <div className="link">
