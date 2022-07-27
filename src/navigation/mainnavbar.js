@@ -15,9 +15,9 @@ export default function MainNavbar(){
             <div className="grid grid-rows-1 grid-cols-7 gap-x-6 flex flex-row flex-nowrap flex-initial font-medium pb-0 pt-4 font-serif text-xl">
 
                 <div style={{display:'flex'}}><Link to='/' class="text-black no-underline decoration-1 font-semibold  ">Home</Link></div>
-                <div><a href="#" class="text-black no-underline font-semibold">Order</a></div>
-                <div><a href="#" class="text-black no-underline font-semibold">About</a></div>
-                <div><a href="#" class="text-black no-underline font-semibold">Contact</a></div>
+                <div><Link to='' class="text-black no-underline font-semibold">Order</Link></div>
+                <div><Link to='' class="text-black no-underline font-semibold">About</Link></div>
+                <div><Link to='' class="text-black no-underline font-semibold">Contact</Link></div>
                 <div><Link to='/login' class="text-black no-underline font-semibold">Login </Link></div>
                 <div><Link to='/signup' class="text-black no-underline font-semibold">SignUp</Link> </div>
 

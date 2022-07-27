@@ -15,6 +15,7 @@ import SignUp from './components/SignUp'
 import Vendor from './vendor'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cart from './Cart'
+import Category from './Category';
 
 
 
@@ -46,6 +47,7 @@ function App() {
             <Route path='/signup' element={<SignUp/>} />
             <Route path='/vendor' element={<Vendor/>} />
             <Route path='/cart' element={<Cart/>}/>
+            <Route path='/category' element={<Category/>}/>
           </Routes>
           
         <Footer/>
