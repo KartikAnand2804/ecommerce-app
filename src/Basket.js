@@ -1,5 +1,7 @@
 import React from 'react';
-import { CurrencyRupee } from '@mui/icons-material';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
+import RemoveCircleRoundedIcon from '@mui/icons-material/RemoveCircleRounded';
 
 export default function Basket(props) {
   const { cartItems, onAdd, onRemove } = props;
@@ -8,24 +10,24 @@ export default function Basket(props) {
   const shippingPrice = itemsPrice > 2000 ? 0 : 20;
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
   return (
-    <aside className="block col-1">
+    <div className="cartContainer" class="text-xl font-semibold font-mono">
       <h2>Cart Items</h2>
-      <div class='border-2 font-semibold'>
-        {cartItems.length === 0 && <div class="font-bold w-full">Cart is empty</div>}
+      <div class='border-2'>
+        {cartItems.length === 0 && <div class="font-black">Cart is empty</div>}
         {cartItems.map((item) => (
-          <div key={item.id} className="row">
-            <div className="col-2">{item.name}</div>
-            <div className="col-2">
+          <div key={item.id} class="inline-flex">
+            <div className="">{item.name}</div>
+            <div className="">
               <button onClick={() => onRemove(item)} className="remove">
-                -
+                <RemoveCircleRoundedIcon/>
               </button>{' '}
               <button onClick={() => onAdd(item)} className="add">
-                +
+                <AddCircleRoundedIcon/>
               </button>
             </div>
 
-            <div className="col-2 text-right">
-              {item.qty} x ${item.price.toFixed(2)}
+            <div>
+              {item.qty} x <CurrencyRupeeIcon/>{item.price.toFixed(2)}
             </div>
           </div>
         ))}
@@ -35,16 +37,16 @@ export default function Basket(props) {
             <hr></hr>
             <div className="row">
               <div className="col-2">Items Price</div>
-              <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
+              <div className="col-1 text-right"><CurrencyRupeeIcon/>{itemsPrice.toFixed(2)}</div>
             </div>
             <div className="row">
               <div className="col-2">Tax Price</div>
-              <div className="col-1 text-right">${taxPrice.toFixed(2)}</div>
+              <div className="col-1 text-right"><CurrencyRupeeIcon/>{taxPrice.toFixed(2)}</div>
             </div>
             <div className="row">
               <div className="col-2">Shipping Price</div>
               <div className="col-1 text-right">
-                ${shippingPrice.toFixed(2)}
+                <CurrencyRupeeIcon/>{shippingPrice.toFixed(2)}
               </div>
             </div>
 
@@ -53,18 +55,20 @@ export default function Basket(props) {
                 <strong>Total Price</strong>
               </div>
               <div className="col-1 text-right">
-                <strong>${totalPrice.toFixed(2)}</strong>
+                <strong><CurrencyRupeeIcon/>{totalPrice.toFixed(2)}</strong>
               </div>
             </div>
             <hr />
-            <div className="row">
-              <button onClick={() => alert('Implement Checkout!')}>
+            <div className="checkoutButton" class="text-xl font-semibold justify-center items-center">
+            <div>
+              <button class="rounded-full bg-slate-500 p-4" onClick={() => alert('Implement Checkout!')}>
                 Checkout
               </button>
+            </div>
             </div>
           </>
         )}
       </div>
-    </aside>
+    </div>
   );
 }

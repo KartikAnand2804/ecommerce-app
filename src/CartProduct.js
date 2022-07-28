@@ -3,7 +3,7 @@ import React from 'react';
 export default function CartProduct(props) {
   const { product, onAdd } = props;
   return (
-    <div class="border-2 p-3 drop-shadow-xl space-x-4">
+    <div class="border-2 p-3 drop-shadow-xl">
         <div class="p-4">
             <div className="image" class="border-2">
             <img src={product.image} alt={product.name} />
