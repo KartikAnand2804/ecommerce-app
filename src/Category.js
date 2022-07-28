@@ -19,7 +19,7 @@ const Category = () => {
 
     <div className="card-1" style={{display: 'inline-block', marginLeft: '5rem', marginRight: '5rem'}}>
       <Card style={{ width: '18vw' }}>
-      <Card.Img variant="top" src="https://image01-in.oneplus.net/ebp/202207/11/1-m00-3c-e4-cpgm7mll9pmaub9taanhvrc4ufm536_384_384.png" />
+    <Card.Img variant="top" src="https://image01-in.oneplus.net/ebp/202207/11/1-m00-3c-e4-cpgm7mll9pmaub9taanhvrc4ufm536_384_384.png" />
       <Card.Body>
         <Card.Title>OnePlus 10 Pro 5G</Card.Title>
         <Card.Text>
