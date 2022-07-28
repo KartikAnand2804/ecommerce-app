@@ -1,7 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 
@@ -26,7 +25,7 @@ const Category = () => {
         and UFS3.1, unlock effortlessly fast and smooth performance at your fingertips.
         </Card.Text>
       </Card.Body>
-      <button id = "button" style={{backgroundColor:"aqua", borderRadius:"25px", width:"50%", margin:"auto",marginBottom:"20px"}}>Add to cart</button>
+      <button id = "button" style={{backgroundColor:"aqua",borderRadius:"25px", width:"50%", margin:"auto",marginBottom:"20px"}} class="hover:bg-slate-400" >Add to cart</button>
 
       
      </Card>

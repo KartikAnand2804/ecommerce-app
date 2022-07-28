@@ -1,21 +1,16 @@
 import React, { useState } from 'react';
 import './App.css';
 import MainNavbar from './navigation/mainnavbar.js'
-import FirstGrid from './body/first_grid.js';
-import SlidingCarousel from './slidingcarousel/carousel.js'
 import Footer from './footer.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SecondGrid from './body/second_grid';
-import NewsLetter from './body/newsletter';
-import { getCardActionAreaUtilityClass } from '@mui/material';
 import LoginForm from './components/LoginForm';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './components/Home'
 import SignUp from './components/SignUp'
 import Vendor from './vendor'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Cart from './Cart'
 import Category from './Category';
+import MainCart from './MainCart';
 
 
 
@@ -46,7 +41,7 @@ function App() {
             <Route path='/login' element={<LoginForm/>} />
             <Route path='/signup' element={<SignUp/>} />
             <Route path='/vendor' element={<Vendor/>} />
-            <Route path='/cart' element={<Cart/>}/>
+            <Route path='/cart' element={<MainCart/>}/>
             <Route path='/category' element={<Category/>}/>
           </Routes>
           
