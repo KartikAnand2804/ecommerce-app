@@ -87,3 +87,44 @@ color: #fff
     background-color: rgb(255, 255, 255);
     border-color: white;
 }
+
+
+/* //<------------------------------------CSS OF MAIN NAVBAR-----------------------------------> */
+.nav{
+    height: 80px;
+}
+.nav img{
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+}
+.nav ul li{
+    font-size: 22px;
+    font-weight: 200;
+    display: inline-block;
+    margin: 20px;
+}
+
+
+.nav ul{
+    justify-content: center;
+}
+
+.right{
+   position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.Account{
+    display: inline-block;
+    padding: 20px;
+}
+.cart_icon{
+    display: inline-block;
+    padding: 20px;
+}
+.vendor_icon{
+    display: inline-block;
+    padding: 20px;
+}
+
