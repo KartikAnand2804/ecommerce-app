@@ -144,7 +144,7 @@ html{
     background: #060506;
 } */
 a{
-    color: #2b2a2a;
+    color: #000000;
     font-weight: 400;
     outline: none;
     text-decoration: none;
@@ -158,7 +158,7 @@ a:focus{
 p{
     padding: 4vh;
     margin: 0 0 15px 0;
-    color: #454545;
+    color: black;
     font-weight: 300;
 }
 h1,
@@ -169,7 +169,7 @@ h5,
 h6{
     padding: 0;
     margin: 0 0 15px 0;
-    color: #000000;
+    color: black;
     font-weight: 700;
 }
 img{
