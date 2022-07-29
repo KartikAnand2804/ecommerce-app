@@ -64,7 +64,8 @@ const Footer = () => {
             </div>
             <hr />
             <div className="row">
-                <p className="col-sm" class="text-center">
+                <p className="col-sm" class="text-center text-white">
+
                     &copy;2022 Kharidaari.com INC | All Rights Reserved | Terms of Service | Privacy
                 </p>
             </div>
