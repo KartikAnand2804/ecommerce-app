@@ -5,7 +5,7 @@ export default function Cart(props) {
   const { products, onAdd } = props;
   return (
     <div>
-        <div class="p-4 grid grid-cols-3 grid-rows-3">
+        <div class="p-0 grid grid-cols-3 grid-rows-3">
             {products.map((product) => (
             <CartProduct key={product.id} product={product} onAdd={onAdd}/>
         ))}
