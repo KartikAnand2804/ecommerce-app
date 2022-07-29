@@ -31,7 +31,7 @@ export default function About() {
                                     <h2>Daravi Joshi</h2>
                                     <h3>about section</h3>
                                     <p>Some text goes here that describes about team members</p>
-                                    <h4>abc@gmail.com</h4>
+                                    <h4>daravijoshi123@gmail.com</h4>
 
                                     <div className="team-social">
                                         <a href="#" className="social-tw">
@@ -69,7 +69,7 @@ export default function About() {
                                     <h2>Divyansh jaiswal</h2>
                                     <h3>about section</h3>
                                     <p>Some text goes here that describes about team members</p>
-                                    <h4>abc@gmail.com</h4>
+                                    <h4>divyanshjaiswaljee@gmail.com</h4>
 
                                     <div className="team-social">
                                         <a href="#" className="social-tw">
@@ -107,7 +107,7 @@ export default function About() {
                                     <h2>Saurabh Gupta</h2>
                                     <h3>About section</h3>
                                     <p>Some text goes here that describes about team members</p>
-                                    <h4>abc@gmail.com</h4>
+                                    <h4>saurabhgupta9369899665@gmail.com</h4>
 
                                     <div className="team-social">
                                         <a href="#" className="social-tw">
@@ -148,7 +148,7 @@ export default function About() {
                                 <h2>Kartik Anand</h2>
                                 <h3>about section</h3>
                                 <p>Some text goes here that describes about team members</p>
-                                <h4>abc@gmail.com</h4>
+                                <h4>kartikanand.work@gmail.com</h4>
 
                                 <div className="team-social">
                                     <a href="#" className="social-tw">
@@ -186,7 +186,7 @@ export default function About() {
                                 <h2>Karan kanojia</h2>
                                 <h3>About section</h3>
                                 <p>Some text goes here that describes about team members</p>
-                                <h4>abc@gmail.com</h4>
+                                <h4>karankanojia1110@gmail.com</h4>
 
                                 <div className="team-social">
                                     <a href="#" className="social-tw">

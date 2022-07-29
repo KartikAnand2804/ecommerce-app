@@ -18,18 +18,6 @@ const data = {
         price: 1000,
         image: 'https://picsum.photos/id/21/3008/2008',
       },
-      {
-        id: '4',
-        name: 'W Shoes',
-        price: 1000,
-        image: 'https://picsum.photos/id/21/3008/2008',
-      },
-      {
-        id: '5',
-        name: 'W Shoes',
-        price: 1000,
-        image: 'https://picsum.photos/id/21/3008/2008',
-      },
     ],
   };
   export default data;
