@@ -10,9 +10,9 @@ export default function Basket(props) {
   const shippingPrice = itemsPrice > 2000 ? 0 : 20;
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
   return (
-    <div className="cartContainer" class="text-xl font-semibold font-mono">
+    <div className="cartContainer" class="text-xl font-base font-mono text-center">
       <h2>Cart Items</h2>
-      <div class='border-2'>
+      <div class='border-2 text-center p-2'>
         {cartItems.length === 0 && <div class="font-black">Cart is empty</div>}
         {cartItems.map((item) => (
           <div key={item.id} class="inline-flex">
@@ -36,32 +36,32 @@ export default function Basket(props) {
           <>
             <hr></hr>
             <div className="row">
-              <div className="col-2">Items Price</div>
-              <div className="col-1 text-right"><CurrencyRupeeIcon/>{itemsPrice.toFixed(2)}</div>
+              <div className="col-2 text-lg">Items Price</div>
+              <div className="col-1 text-right text-lg"><CurrencyRupeeIcon/>{itemsPrice.toFixed(2)}</div>
             </div>
             <div className="row">
-              <div className="col-2">Tax Price</div>
-              <div className="col-1 text-right"><CurrencyRupeeIcon/>{taxPrice.toFixed(2)}</div>
+              <div className="col-2 text-lg">Tax Price</div>
+              <div className="col-1 text-right text-lg"><CurrencyRupeeIcon/>{taxPrice.toFixed(2)}</div>
             </div>
             <div className="row">
-              <div className="col-2">Shipping Price</div>
-              <div className="col-1 text-right">
+              <div className="col-2 text-lg">Shipping Price</div>
+              <div className="col-1 text-right text-lg">
                 <CurrencyRupeeIcon/>{shippingPrice.toFixed(2)}
               </div>
             </div>
 
             <div className="row">
-              <div className="col-2">
+              <div className="col-2 text-lg">
                 <strong>Total Price</strong>
               </div>
-              <div className="col-1 text-right">
+              <div className="col-1 text-right text-lg">
                 <strong><CurrencyRupeeIcon/>{totalPrice.toFixed(2)}</strong>
               </div>
             </div>
             <hr />
-            <div className="checkoutButton" class="text-xl font-semibold justify-center items-center">
+            <div className="checkoutButton" class="text-m  font-semibold justify-center items-center">
             <div>
-              <button class="rounded-full bg-slate-500 p-4" onClick={() => alert('Implement Checkout!')}>
+              <button class="p-3 rounded-full bg-slate-300  p-2" onClick={() => alert('Implement Checkout!')}>
                 Checkout
               </button>
             </div>

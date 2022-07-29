@@ -33,10 +33,10 @@ function App() {
   return (
     <div className="MainCart">
       {/* <Header countCartItems={cartItems.length}></Header> */}
-      <div class='inline-flex grid grid-cols-3 p-4'>
-        <div class='col-span-2'><Cart products={products} onAdd={onAdd}/></div>
+      <div class='inline-flex grid grid-cols-3 p-4 '>
+        <div class='col-span-2 '><Cart products={products} onAdd={onAdd}/></div>
 
-        <div class='p-4'>
+        <div class='p-4 '>
             <Basket
             cartItems={cartItems}
             onAdd={onAdd}
