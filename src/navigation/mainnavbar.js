@@ -14,8 +14,8 @@ export default function MainNavbar(){
             <ul>
                 <li><div style={{display:'flex'}}><Link to='/' class="text-black no-underline decoration-1 font-semibold  ">Home</Link></div></li>
                 <li> <div><Link to='' class="text-black no-underline font-semibold">Order</Link></div></li>
-                <li><div><Link to='' class="text-black no-underline font-semibold">About</Link></div></li>
-                <li> <div><Link to='' class="text-black no-underline font-semibold">Contact</Link></div></li>
+                <li><div><Link to='/about' class="text-black no-underline font-semibold">About</Link></div></li>
+                <li> <div><Link to='/contact' class="text-black no-underline font-semibold">Contact</Link></div></li>
                 <li> <div><Link to='/login' class="text-black no-underline font-semibold">Login </Link></div></li>
                 <li><div><Link to='/signup' class="text-black no-underline font-semibold">SignUp</Link> </div></li>
             </ul>

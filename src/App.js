@@ -11,6 +11,8 @@ import Vendor from './vendor'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Category from './Category';
 import MainCart from './MainCart';
+import Contact from './Contact';
+import About from './About';
 
 
 
@@ -43,6 +45,8 @@ function App() {
             <Route path='/vendor' element={<Vendor/>} />
             <Route path='/cart' element={<MainCart/>}/>
             <Route path='/category' element={<Category/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/about' element={<About/>}/>
           </Routes>
           
         <Footer/>
