@@ -1,5 +1,5 @@
 import React from 'react'
-import NewsLetter from './body/newsletter';
+//import NewsLetter from './body/newsletter';
 
 const Footer = () => {
   return (

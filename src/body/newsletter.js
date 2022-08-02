@@ -19,7 +19,7 @@ export default function NewsLetter(){
           </div>
         </div>
         <div className="link">
-        <a className="unsubscribe-link" href="">Subscribe to receive marketing information</a>
+        <a className="unsubscribe-link" href="##">Subscribe to receive marketing information</a>
         </div>
 	</div>
 </div>

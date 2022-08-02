@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import MainNavbar from './navigation/mainnavbar.js'
 import Footer from './footer.js'
@@ -28,9 +29,9 @@ function App() {
   //   console.log(details);
   // }
 
-  const Logout = () => {
-    console.log("Logout");
-  }
+  // const Logout = () => {
+  //   console.log("Logout");
+  // }
 
   return (
     <>
