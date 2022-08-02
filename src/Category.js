@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+// import ListGroup from 'react-bootstrap/ListGroup';
+// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 
 const Category = () => {

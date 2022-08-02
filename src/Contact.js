@@ -55,26 +55,12 @@ export default function Contact() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                             </div>
                         </div>
                     </div>
                     <div className="credits">
                         inspired by
-                        <a className="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+                        <a className="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank" rel="noreferrer">
                             <svg className="dribbble" viewBox="0 0 200 200">
                                 <g stroke="#ffffff" fill="none">
                                     <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
