@@ -2,6 +2,7 @@ import { height } from '@mui/system';
 import React from 'react';
 // import { Form, Button } from 'semantic-ui-react';
 import { useForm } from "react-hook-form";
+import { Link } from 'react-router-dom';
 
 export default function LoginForm() {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -10,7 +11,7 @@ export default function LoginForm() {
     }
     return (
         <>
-            <div class="w-96" style={{marginLeft:"560px", margin: "auto", justifyContent: "center", marginBottom: "260px"}}>
+            <div class="w-96" style={{marginLeft:"560px", margin: "auto", justifyContent: "center", marginBottom: "325px"}}>
                 <h2 style={{textAlign:"center"}}>Login Form</h2>
                 <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit(onSubmit)}>
                     <div class="mb-4">
@@ -19,7 +20,7 @@ export default function LoginForm() {
                         </label>
                         <input {...register("username", { required: true, maxLength: 12 })} class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"/>
                     </div>
-                    {errors.username && <p className="text-red-500 text-xs italic">Please check the First Name</p>}
+                    {errors.username && <p className="text-red-500 text-xs italic">Please check Your Email</p>}
                     <div class="mb-6">
                         <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
                             Password
@@ -40,6 +41,10 @@ export default function LoginForm() {
                         <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
                             Forgot Password?
                         </a>
+                    </div>
+                    <div class="flex items-center justify-evenly mt-4">
+                        <Link to="/SignUp" class="inline-block align-baseline font-bold text-sm text-black hover:text-blue-800">New User ? Register here</Link>
+                        {/* <Link to="/SignUp" class="inline-block align-baseline font-bold text-sm text-black">Sign Up</Link> */}
                     </div>
                 </form>
             </div>
