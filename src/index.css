@@ -134,20 +134,39 @@ color: #fff
 
 figcaption{
     position: absolute;
-    bottom: 4rem;
-    margin: 0 26rem;
+    bottom: 3rem;
+    margin: 0 13rem;
     color: #fff;
     font-size: 1.5em;
 }
 
-@media screen and (max-width: 768px) {
-    figcaption{
-        position: inherit;
-        bottom: inherit;
-        margin: .25rem 0px;
-        font-size: inherit;
-        color: inherit;
-    }
+
+#second-button{
+    display: flex;
+    justify-content: center;
+    margin-right: 1000px;
+    border: 2px solid black;
+    border-radius: 25px;
+    color: white;
+    background-color: black;
+    box-shadow:brown;
+    padding: 5px;
+    width: 100px;
+    text-decoration: none;
+}
+
+#third-button{
+    display: flex;
+    justify-content: center;
+    margin-right: 1000px;
+    border: 2px solid black;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    box-shadow:brown;
+    padding: 5px;
+    width: 100px;
+    text-decoration: none;
 }
 
 /* //<------------------------------------ close CSS OF second grid-----------------------------------> */

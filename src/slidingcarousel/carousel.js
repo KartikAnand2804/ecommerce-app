@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
+import { Link } from 'react-router-dom';
 
 
 export default function slidingCarousel(){
@@ -12,8 +13,9 @@ export default function slidingCarousel(){
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3 >First slide label</h3>
-      <p >Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <Link to='/cart' class="text-white no-underline hover:underline"><h3 >Buy Now</h3></Link>
+      
+      <p >One Plus 8t.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -24,8 +26,8 @@ export default function slidingCarousel(){
     />
 
     <Carousel.Caption>
-      <h3 >Second slide label</h3>
-      <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <Link to='/cart' class="text-white no-underline hover:underline"><h3 >Buy Now</h3></Link>
+      <p >One Plus Tv 55'inches</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -36,8 +38,8 @@ export default function slidingCarousel(){
     />
 
     <Carousel.Caption>
-      <h3 >Third slide label</h3>
-      <p >Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    <Link to='/cart' class="text-white no-underline hover:underline "><h3 >Buy Now</h3></Link>
+      <p >One Plus 9 Pro.</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
