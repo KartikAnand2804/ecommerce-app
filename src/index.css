@@ -129,3 +129,25 @@ color: #fff
 }
 
 /* //<------------------------------------ close CSS OF MAIN NAVBAR-----------------------------------> */
+
+/* //<------------------------------------ Start CSS OF second grid-----------------------------------> */
+
+figcaption{
+    position: absolute;
+    bottom: 4rem;
+    margin: 0 26rem;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+    figcaption{
+        position: inherit;
+        bottom: inherit;
+        margin: .25rem 0px;
+        font-size: inherit;
+        color: inherit;
+    }
+}
+
+/* //<------------------------------------ close CSS OF second grid-----------------------------------> */
