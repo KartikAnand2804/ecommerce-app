@@ -1,6 +1,8 @@
 import React, { useState }from 'react';
 import { useForm } from "react-hook-form";
 import UserService from '../services/UserService';
+import { Modal, ModalBody, ModalHeader } from "reactstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function SignUp() {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -28,8 +30,27 @@ export default function SignUp() {
         UserService.saveUser(user).then((response)=>{console.log(response)}).catch((error)=>{console.log(error);})
     }
 
+    const [modal, setmodal]=useState(false)
+
     return (
         <>
+            <div>
+                <Modal
+                    size='lg'
+                    isOpen={modal}
+                    toggle={() => setmodal(!modal)}
+                >
+                    <ModalHeader
+                        toggle={() => setmodal(!modal)}
+                    >
+                        Hey there!!!
+                    </ModalHeader>
+                    <ModalBody>
+                        <h1 class= "text-green-500 ">Congrats !!!</h1>
+                        <p>You have been successfully registered.</p>
+                    </ModalBody>
+                </Modal>
+            </div>
             <div class="w-2/5" style={{ marginLeft: "480px" }}>
                 <h2 style={{ textAlign: "center" }}>SignUp Form</h2>
                 <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit(onSubmit)}>
@@ -100,7 +121,7 @@ export default function SignUp() {
                     </div>
                     {errors.confirmpassword && <p className="text-red-500 text-xs italic">Please check the Password</p>}
                     <div class="flex items-center justify-center">
-                        <button onClick={saveUser} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                        <button onClick={() => setmodal(true)} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                             Register
                         </button>
                     </div>
@@ -110,5 +131,3 @@ export default function SignUp() {
         </>
     )
 }
-
-

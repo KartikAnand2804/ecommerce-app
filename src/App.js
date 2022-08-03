@@ -16,7 +16,6 @@ import Contact from './Contact';
 import About from './About';
 
 
-
 function App() {
   // const adminUser ={
   //   email: "admin@gmail.com",
