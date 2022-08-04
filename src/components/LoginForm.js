@@ -3,6 +3,7 @@ import React from 'react';
 //import { Form, Button } from 'semantic-ui-react';
 import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
+import LoginIcon from '@mui/icons-material/Login';
 
 export default function LoginForm() {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -37,7 +38,7 @@ export default function LoginForm() {
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                             Sign In
                         </button>
-                        <a class="justify-center content-center" href="##"><img style={{width:"30px",height:"30px",marginRight:"50px"}} src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="Google_logo"/></a>
+                        {/* <a class="justify-center content-center" href="##"><img style={{width:"30px",height:"30px",marginRight:"50px"}} src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="Google_logo"/></a> */}
                         <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="##">
                             Forgot Password?
                         </a>
