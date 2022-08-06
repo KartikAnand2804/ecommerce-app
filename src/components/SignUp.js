@@ -118,7 +118,7 @@ export default function SignUp() {
                             required: true,
                             pattern: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/
                         })}
-                            class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" {...register("confirmpassword", { required: true, maxLength: 10 })} id="password" type="password" placeholder="******" />
+                            class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" {...register("confirmpassword", { required: true, maxLength: 10 })} id="confirmpassword" type="password" placeholder="******" />
                     </div>
                     {errors.confirmpassword && <p className="text-red-500 text-xs italic">Please check the Password, password should be same</p>}
                     <div class="flex items-center justify-center">
