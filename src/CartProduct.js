@@ -11,7 +11,7 @@ export default function CartProduct(props) {
             <img src={product.image} alt={product.name} />
             </div>
 
-            <div className="productInfo" class="text-m   font-semibold inline-flex grid-rows-1 grid-cols-2 ">
+            <div className="productInfo" class="text-m font-semibold inline-flex grid-rows-1 grid-cols-2 ">
                 <div class="p-4">{product.name}</div>
                 <div class="p-4 gap-x-3"><CurrencyRupeeIcon/>{product.price}</div>
             </div>

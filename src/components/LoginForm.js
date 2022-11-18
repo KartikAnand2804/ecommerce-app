@@ -3,13 +3,15 @@ import React from 'react';
 //import { Form, Button } from 'semantic-ui-react';
 import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
-import LoginIcon from '@mui/icons-material/Login';
+// import LoginIcon from '@mui/icons-material/Login';
+// import { responsiveFontSizes } from '@mui/material';
 
 export default function LoginForm() {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = (data) => {
         console.log(data);
     }
+
     return (
         <>
             <div class="w-96" style={{marginLeft:"560px", margin: "auto", justifyContent: "center", marginBottom: "325px"}}>

@@ -4,7 +4,11 @@ import Basket from './Basket';
 import data from './data';
 import { useState } from 'react';
 function App() {
+  // const { products } = data;
+
   const { products } = data;
+  
+
   const [cartItems, setCartItems] = useState([]);
   const onAdd = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
@@ -34,7 +38,7 @@ function App() {
     <div className="MainCart">
       {/* <Header countCartItems={cartItems.length}></Header> */}
       <div class='inline-flex grid grid-cols-3 p-4 '>
-        <div class='col-span-2 '><Cart products={products} onAdd={onAdd}/></div>
+        <div class='col-span-2 '><Cart products={ products } onAdd={onAdd}/></div>
 
         <div class='p-4 '>
             <Basket

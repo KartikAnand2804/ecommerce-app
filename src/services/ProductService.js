@@ -6,6 +6,11 @@ class ProductService{
     saveProduct(product) {
         return axios.post(USER_API_BASE_URL, product);
     }
+
+    getProducts(){
+        //TODO: get all the products from the database.
+        return axios.get(USER_API_BASE_URL);
+    }
 }
 
 export default new ProductService();
