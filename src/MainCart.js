@@ -1,15 +1,47 @@
 // import Header from './components/Header';
-import Cart from './Cart';
 import Basket from './Basket';
-import data from './data';
+import Cart from './Cart';
+// import data from './data';
 import { useState } from 'react';
-function App() {
-  // const { products } = data;
+import ProductService from './services/ProductService';
 
-  const { products } = data;
+
+function App() {
+
+  const fetchProducts = async () => {
+    try {
+      const { data } = await ProductService.getProducts();
+      return data;
+    } catch (error) {
+      console.error(await error);
+    }
+  };
+  
+  fetchProducts()
+    .then((data) => {
+      // const productArray = Object.entries(data);
+      console.log(data);
+      return data;
+    });
+  
+  const p = Object.entries(fetchProducts());
   
 
+  //fetching all the products here
+  // const getAllProducts = async () => {
+  //   try{
+  //   const response = await ProductService.getProducts();
+  //   const data = response.data;
+  //   return data;
+  //   }
+  //     catch( error ){
+  //     console.log(error);
+  //   }
+  // }
+
+  // cart functionalities are here.
   const [cartItems, setCartItems] = useState([]);
+ 
   const onAdd = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
     if (exist) {
@@ -37,8 +69,10 @@ function App() {
   return (
     <div className="MainCart">
       {/* <Header countCartItems={cartItems.length}></Header> */}
-      <div class='inline-flex grid grid-cols-3 p-4 '>
-        <div class='col-span-2 '><Cart products={ products } onAdd={onAdd}/></div>
+      <div class='grid inline-flex  grid-cols-3 p-4 '>
+        <div class='col-span-2 '>
+         <Cart products={p} onAdd={onAdd}/>
+        </div>
 
         <div class='p-4 '>
             <Basket

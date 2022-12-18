@@ -8,7 +8,7 @@ export default function CartProduct(props) {
     <div class="border-2 p-0 drop-shadow-xl ">
         <div class="p-3">
             <div className="image" class="border-2">
-            <img src={product.image} alt={product.name} />
+            {/* <img src={product.image} alt={product.name} /> */}
             </div>
 
             <div className="productInfo" class="text-m font-semibold inline-flex grid-rows-1 grid-cols-2 ">
